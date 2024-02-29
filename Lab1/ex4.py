@@ -5,6 +5,7 @@ def get_hostname_by_ip(ip):
     try:
         hostname, _, _ = socket.gethostbyaddr(ip)
         return hostname
+    
     except socket.herror:
         return "Nie znaleziono hosta dla podanego adresu ip"
     
