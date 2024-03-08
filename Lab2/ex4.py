@@ -14,7 +14,7 @@ def send_receive_message(sock, server_address, message):
 if __name__== '__main__':
     sockIPv4 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     sockIPv4.settimeout(5)  # Increase timeout to 5 seconds
-    server_address = ('212.182.24.236', 22)
+    server_address = ('127.0.0.1', 2901)
 
     # Send a message to the server
     message_to_send = "Hello, server!"
