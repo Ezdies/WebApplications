@@ -21,10 +21,10 @@ if __name__ == '__main__':
 
     # Send the hostname to the server
     response = send_receive_message(sockIPv4, server_address, hostname)
-    
+
     # Get the IP address corresponding to the received hostname
     ip_address = socket.gethostbyname(response)
-    
+
     print("Received IP address:", ip_address)
-    
+
     sockIPv4.close()
