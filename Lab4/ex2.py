@@ -35,8 +35,7 @@ while True:
             try:
                 data = sock.recv(4096)
                 if data:
-                    time = strftime("%Y-%m-%d %H:%M:%S", gmtime())
-                    sock.send(time.encode())
+                    sock.send(data)
                     print ("[%s] Sending back to client %s data: [\'%s\']... " % (strftime("%Y-%m-%d %H:%M:%S", gmtime()), client_address, data))
 
             except:

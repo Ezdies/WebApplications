@@ -1,5 +1,4 @@
 import socket
-from time import gmtime, strftime
 
 def send_receive_message(sock, message):
     # Send the message to the server
